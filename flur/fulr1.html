@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.mbl {
+		    width: 20em;
+		    height: 20em;
+		    background: url(img/1.jpeg);
+		    background-size: cover;
+		    overflow: hidden;
+		    margin: 30px;
+		}
+
+		.text {
+		    width: 18em;
+		    height: 18em;
+		    margin: 1em;
+		    background: hsla(0, 0%, 100%, .4);
+		    color: black;
+		    text-align: center;
+		    overflow: hidden;
+		    position: relative;
+		}
+
+		.text::before {
+		    position: absolute;
+		    background: url(img/1.jpeg);
+		    background-size: cover;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    content: '';
+		    filter: blur(20px);
+		    /*    background: rgba(225, 0, 0, 0.5);*/
+		}
+
+		.text blockquote {
+		   height: inherit;
+		    width: inherit;
+		    display: table-cell;
+		    vertical-align: middle;
+		    position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="mbl">
+        <div class="text">
+            <blockquote>
+                所爱穿山海 山海皆可平
+            </blockquote>
+        </div>
+    </div>
+   
+</body>
+</html>

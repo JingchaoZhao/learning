@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+	<title></title>
+	<style type="text/css">
+		*, div {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background: blue;
+		}
+		.mbl {
+		    width: 100%;
+		    /*height: 180px;*/
+		    /*background: url(img/2.jpg);*/
+		    background-size: cover;
+		    overflow: hidden;
+		    /*margin: 30px;*/
+		}
+
+		.text {
+		    width: calc(100% - 40px);
+		    height: 140px;
+		    margin-top: -100px;
+		    margin-left: 20px;
+		    background: hsla(0, 0%, 100%, .9);
+		    color: black;
+		    text-align: center;
+		    overflow: hidden;
+		    position: relative;
+		    z-index: 10;
+		    border-radius: 6px;
+		}
+
+		/*.text::before {
+		    position: absolute;
+		    background: url(img/3.jpg);
+		    background-size: cover;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    content: '';
+		    filter: blur(6px);
+		   
+		}*/
+		.likeBefore {
+			width: calc(100% - 40px);
+		    height: 138px;
+		    margin-top: -141px;
+		    margin-left: 20px;
+		    z-index: 6;
+		    background: red;
+		    position: relative;
+		    background: url(img/3.jpg);
+		    background-size: cover;
+		    filter: blur(6px);
+		     background-position-x: center;
+    		background-position-y: -28px;
+    		background-repeat: no-repeat;
+    		border-radius: 6px;
+		}
+
+		.text div {
+		   height: inherit;
+		    width: inherit;
+		    display: table-cell;
+		    vertical-align: middle;
+		    position: relative;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="mbl">
+		<img src="img/2.jpg" style="width: 100%;" />
+        <div class="text">
+            <div style="padding: 40px; color: red;">
+                所爱穿山海 山海皆可平 所爱穿山海 山海皆可平 所爱穿山海 山海皆可平
+            </div>
+        </div>
+        <div class="likeBefore"></div>
+    </div>
+    
+    </div>
+   
+</body>
+</html>
